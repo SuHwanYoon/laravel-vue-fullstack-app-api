@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => [env('FRONTEND_URL', 'http://localhost:3000')],
+    'allowed_origins'=> explode(',', env('FRONTEND_URL', 'http://localhost:5173')), // .env 파일과 연동하거나 직접 주소를 명시
 
     'allowed_origins_patterns' => [],
 
